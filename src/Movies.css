@@ -1,0 +1,70 @@
+.card {
+    background-color: rgb(37, 36, 36);
+    width: 230px;
+}
+
+    .card img {
+        width: 100%;
+    }
+
+    .desc-box {
+        padding: 16px;
+        padding-top: 0px;
+    }
+
+        .movie-title {
+            color: #f2f2f2;
+            font-size: smaller;
+        }
+
+        .link {
+            border-radius: 4px;
+            background-color: #f6d129;
+            border: none;
+            color: #181717;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+            .link span, .wishlist span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+            
+            .link span:after, .wishlist span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+            
+            .link:hover span, .wishlist:hover span {
+                padding-right: 25px;
+            }
+            
+            .link:hover span:after, .wishlist:hover span:after{
+                opacity: 1;
+                right: 0;
+            }
+
+        .wishlist {
+            border-radius: 4px;
+            background-color: #000000;
+            border: none;
+            color: #f2f2f2;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin-top: 8px;
+        }
